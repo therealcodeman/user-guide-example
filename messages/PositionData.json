@@ -1,0 +1,59 @@
+{
+    "title": "PositionData",
+    "id": 2,
+    "description": "Provides position and orientation information.",
+    "totalBytes": 44,
+    "isVariableSize": false,
+    "contents": [
+        {
+            "name": "latitude",
+            "type": "float32",
+            "bytes": 4,
+            "description": "Latitude in degrees."
+        },
+        {
+            "name": "longitude",
+            "type": "float32",
+            "bytes": 4,
+            "description": "Longitude in degrees."
+        },
+        {
+            "name": "altitude",
+            "type": "float32",
+            "bytes": 4,
+            "description": "Altitude in meters above sea level."
+        },
+        {
+            "name": "quaternion",
+            "type": "struct",
+            "bytes": 16,
+            "description": "Quaternion representing orientation as (x, y, z, w).",
+            "fields": [
+                {
+                    "name": "x",
+                    "type": "float32",
+                    "bytes": 4,
+                    "description": "X component of the quaternion."
+                },
+                {
+                    "name": "y",
+                    "type": "float32",
+                    "bytes": 4,
+                    "description": "Y component of the quaternion."
+                },
+                {
+                    "name": "z",
+                    "type": "float32",
+                    "bytes": 4,
+                    "description": "Z component of the quaternion."
+                },
+                {
+                    "name": "w",
+                    "type": "float32",
+                    "bytes": 4,
+                    "description": "W component of the quaternion."
+                }
+            ]
+        }
+    ]
+}

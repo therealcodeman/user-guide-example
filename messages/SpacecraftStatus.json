@@ -1,0 +1,27 @@
+{
+    "title": "SpacecraftStatus",
+    "id": 1,
+    "description": "Provides health and status of the spacecraft.",
+    "totalBytes": 12,
+    "isVariableSize": false,
+    "contents": [
+        {
+            "name": "Pcie_Status",
+            "type": "enum",
+            "bytes": 4,
+            "description": "Provides pcie link status"
+        },
+        {
+            "name": "Heater1_Status",
+            "type": "enum",
+            "bytes": 4,
+            "description": "Provides status of the heater"
+        },
+        {
+            "name": "Heater2_Status",
+            "type": "enum",
+            "bytes": 4,
+            "description": "Altitude in meters above sea level."
+        }
+    ]
+}
